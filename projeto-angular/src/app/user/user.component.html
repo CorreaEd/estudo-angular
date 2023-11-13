@@ -1,0 +1,23 @@
+<table class="table" border="1">
+    <tr>
+        <th>
+            Nome
+        </th>
+        <th>
+            E-mail
+        </th>
+    </tr>
+    <tr *ngFor="let user of users;">
+        <td>
+            {{user.name}}
+        </td>
+        <td>
+            {{user.email}}
+        </td>
+    </tr>
+</table>
+<div class="button">
+    <button routerLink="register">
+        Register now
+    </button>
+</div>
